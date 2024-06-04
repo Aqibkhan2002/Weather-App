@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ffbbf9e124.js" crossorigin="anonymous"></script>
+</head>
+<body class="min-h-screen bg-black flex justify-center items-center">
+
+    <div class=" min-h-fit bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  p-8 rounded-xl text-white  ">
+        <div class="flex mt-2 space-x-2 ml-2 ">
+             <input type="text" placeholder="Enter the name" class=" rounded-lg text-black p-2 "> 
+             <img src="./images/search.png" class=" search rounded-full h-[35px] cursor-pointer  " alt="">
+        </div>
+        <div class="error ml-2 hidden">Invalid city name</div>
+        <div class="weat hidden ">
+        <img src="./images/sun2-removebg-preview.png " class=" sun h-20 mx-auto mt-4" alt="">
+
+        <div class=" w-fit mx-auto mt-4 p-2">
+            <div class="text-3xl temp">22 deg C</div>
+            <div class="text-2xl cy ">Sitapur</div>
+        </div>
+
+        <div class="flex space-x-12 mt-4 ">
+            <div class="flex">
+                <img src="./images/humidity-removebg-preview.png" class="h-12" alt="">
+                <div class=" humi pt-2 text-lg"></div>
+            </div>
+            <div class="flex">
+                <img src="./images/wind_img-removebg-preview.png" class="h-12" alt="">
+                <div class=" ws pt-2 text-lg"></div>
+            </div>
+
+        </div>
+
+        
+        <div class="flex space-x-16 text-sm ml-4 ">
+            <div>Humidity</div>
+            <div>Wind Speed</div>
+        </div>
+    </div>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
